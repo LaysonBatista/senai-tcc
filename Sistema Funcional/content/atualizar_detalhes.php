@@ -37,11 +37,12 @@ if (!isset($_GET['idObra'])) {
 
     <div class="container">
         <div class="form-container">
-            <h2>Cadastro de Obra</h2>
+            <h2>Atualizar Obra</h2>
 
             <form action="update_obra.php" method="post">
+                <input type="hidden" name="id_obra" value="<?php echo $linha['id_obra'] ?>">
                 <div class="form-group">
-                    <label for="nome_obra">Nome</label>
+                    <label for="nome_obra">Nome da Obra</label>
                     <input type="text" id="nome" name="nome_obra" required value="<?php echo $linha['nome_obra'] ?>">
                 </div>
 
@@ -56,9 +57,9 @@ if (!isset($_GET['idObra'])) {
                 </div>
 
                 <div class="form-group">
-                    <button onclick="return alertarATT();" type="submit"><a href="update_obra.php">Atualizar</a></button>
+                    <button onclick="return alertarATT();" type="submit">Atualizar</button>
 
-                    <button onclick="return alertarCancel()"><a href="tela_principal_construtora.php">Cancelar</a></button>
+                    <button onclick="return alertarCancel();"><a href="tela_principal_construtora.php">Cancelar</a></button>
 
                 </div>
 
@@ -72,6 +73,8 @@ if (!isset($_GET['idObra'])) {
         </div>
 
     </div>
+
+
 
     <script>
         function alertarATT() {
@@ -90,9 +93,10 @@ if (!isset($_GET['idObra'])) {
 
     <script>
         function alertarCancel() {
-            var resposta = confirm("Deseja cancelar a atualização da obra?");
+            var resposta = confirm("Cancelar atualização da obra?");
             if (resposta) {
                 // O usuário clicou em "OK"
+                alert("Atualização cancelada!")
                 header('Location: tela_principal_construtora.php');
             } else {
                 // O usuário clicou em "Cancelar"

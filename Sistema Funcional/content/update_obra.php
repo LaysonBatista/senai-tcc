@@ -5,7 +5,7 @@ if (isset($_POST['nome_obra'], $_POST['descricao_obra'], $_POST['endereco_obra']
     $nome_obra = $_POST['nome_obra'];
     $descricao_obra = $_POST['descricao_obra'];
     $endereco_obra = $_POST['endereco_obra'];
-    $idObra  = $_POST['idObra'];
+    $idObra  = $_POST['id_obra'];
         
 } else {
     echo 'Variaveis não definidas';
@@ -24,7 +24,7 @@ try {
     ':idObra' => $idObra
     ));
     
-} catch (PDOExcpetion $e) {
+} catch (PDOException $e) {
     echo 'erro';
 }
 

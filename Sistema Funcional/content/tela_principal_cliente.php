@@ -71,7 +71,7 @@ $totalObras = $query2->fetchAll();
     <?php
     foreach ($obras as $obra) {
         if (isset($obra)) {
-            echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '">';
+            echo '<a href="detalhes_obras_cliente.php?idObra=' . $obra['id_obra'] . '">';
 
             echo '<div class="div-obra' . $obra['id_obra'] . '">';
 

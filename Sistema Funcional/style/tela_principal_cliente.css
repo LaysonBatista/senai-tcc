@@ -7,7 +7,7 @@
   }
   
   body{
-    background-color: #325777;
+    background-color: #8a9aa7;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -51,7 +51,7 @@
     height: 70%;
     width: 60px;
     list-style-type: none;
-    background: #0f2f4b;
+    background: #576e81;
     overflow: hidden;
     transition: width .3s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -59,7 +59,7 @@
   
   .side-menu:hover {
     width: 300px;
-    box-shadow: rgb(218, 112, 12) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgb(178, 75, 56) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
   
   .side-menu li {
@@ -162,7 +162,7 @@
   .div-obra1 {
     width: 20%;
     height: 25%;
-    background-color: #0f2f4b;
+    background-color: #576e81;
     border-radius: 10px;
     position: absolute;
     top: 30%;
@@ -182,7 +182,7 @@
   .div-obra2 {
     width: 20%;
     height: 25%;
-    background-color: #0f2f4b;
+    background-color: #576e81;
     border-radius: 10px;
     position: absolute;
     top: 30%;
@@ -190,19 +190,21 @@
     transform: translate(-50%, -50%);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: background-color 0.5s ease;
+    transition: box-shadow 0.5s ease;
   }
   
   .div-obra2:hover {
     background-color: #b24b38;
     transition: background-color 0.5s ease;
-    box-shadow: rgba(255, 255, 255, 0.342) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: box-shadow 0.5s ease;
+    box-shadow: rgba(178, 74, 56, 0.24) -5px 5px, rgba(178, 74, 56, 0.219) -10px 10px, rgba(178, 74, 56, 0.185) -15px 15px, rgba(178, 74, 56, 0.103) -20px 20px, rgba(178, 74, 56, 0.021) -25px 25px;
   }
   
   
   .div-obra3 {
     width: 20%;
     height: 25%;
-    background-color: #0f2f4b;
+    background-color: #576e81;
     border-radius: 10px;
     position: absolute;
     top: 30%;

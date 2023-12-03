@@ -23,7 +23,7 @@ try {
   ));
  
   
-} catch (PDOExcpetion $e) {
+} catch (PDOException $e) {
   echo 'erro';
 }
 
