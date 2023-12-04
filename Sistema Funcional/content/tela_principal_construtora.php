@@ -27,6 +27,7 @@ $totalObras = $query2->fetchAll();
     <title>Tela Principal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/tela_principal_construtora.css">
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -41,7 +42,7 @@ $totalObras = $query2->fetchAll();
 
         <ul class="side-menu">
             <li><a href=""><span class="fa fa-code"><img class="menu-img" src="../image/menu-branco.png" alt="menu barra"></span>Obra 360</a></li>
-            <li><a href="detalhes_obras.php"><span class="fa fa-cog"><img class="menu-info" src="../image/info-branco.png" alt="incone informacao"></span>Sobre nós</a></li>
+            <li><a href="sobre_nos.php"><span class="fa fa-cog"><img class="menu-info" src="../image/info-branco.png" alt="incone informacao"></span>Sobre nós</a></li>
             <li><a href="../content/cadastro_clientes.php"><span class="fa fa-font"><img class="menu-cadastro" src="../image/cadastro-branco.png" alt="incone cadastro"></span>Cadastrar Cliente</a></li>
             <li><a href="../content/cadastro_funcionarios.php"><span class="fa fa-font"><img class="menu-cadastro" src="../image/icon-funcionario.png" alt="incone cadastro"></span>Cadastrar Funcionarios</a></li>
             <li><a id="logout" href="tela_login_construtora.php"><span class="fa fa-check-square"><img class="menu-info" src="../image/sair-branco.png" alt="incone informacao"></span>Sair</a></li>
