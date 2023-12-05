@@ -7,7 +7,7 @@
   }
   
   body{
-    background-color: #8a9aa7;
+    background-color: #b24a3896;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -51,15 +51,15 @@
     height: 70%;
     width: 60px;
     list-style-type: none;
-    background: #576e81;
+    background: #b24b38;
     overflow: hidden;
     transition: width .3s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
   
   .side-menu:hover {
     width: 300px;
-    box-shadow: rgb(178, 75, 56) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
   
   .side-menu li {
@@ -81,7 +81,7 @@
   
   .side-menu li a:hover,
   .side-menu li:first-child a {
-    background: #b24b38;
+    background: #0f2f4b;
     display: block;
     transition: background 0.5s ease;
   }

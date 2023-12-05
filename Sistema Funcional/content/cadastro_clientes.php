@@ -50,6 +50,7 @@
     <script>
       function alertar() {
         alert('Cliente cadastrado!');
+        header('Location: cadastro_detalhes.php');
       }
     </script>
 
