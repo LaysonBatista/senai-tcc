@@ -156,8 +156,8 @@ form.example::after {
 .div-add-obra:hover {
   background-color: #b24b38;
   transition: background-color 0.5s ease;
-  box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px, rgba(255, 255, 255, 0.65) 0px 4px 6px -1px, rgba(231, 228, 228, 0.08) 0px 1px 0px inset;
-  transition: box-shadow 0.5s ease;rgba(233, 233, 233, 0.08)
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px, rgba(255, 255, 255, 0.65) 0px 4px 6px -1px, rgba(231, 228, 228, 0.452) 0px 1px 0px inset;
+  transition: box-shadow 0.5s ease;
 }
 
 

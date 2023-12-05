@@ -32,7 +32,11 @@ $obras = $query->fetchAll();
             <nav class="page__menu menu">
                 <ul class="menu__list r-list">
                     <li class="menu__logo"><img src="../image/obra360.png" alt="logo_obra_360"></li>
-                    <li class="menu__group"><a href="detalhes_obras.php" class="menu__link r-link text-underlined">Detalhes</a></li>
+                    <li class="menu__group"> <?php
+                                                foreach ($obras as $obra) {
+                                                    echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '"class="menu__link r-link text-underlined">Detalhes</a></li>';
+                                                }
+                                                ?>
                     <li class="menu__group"><a href="timeline.php" class="menu__link r-link text-underlined">Andamento</a></li>
                     <li class="menu__group"><a href="funcionarios.php" class="menu__link r-link text-underlined">Funcionários</a></li>
                     <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Mensagens</a></li>
