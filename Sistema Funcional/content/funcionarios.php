@@ -108,8 +108,8 @@ $obras = $query2->fetchAll();
             echo '<td>' . $funcionario['id_funcionario'] . '</td>';
             echo '<td>' . $funcionario['nome_funcionario'] . '</td>';
             echo '<td>' . $funcionario['cargo_funcionario'] . '</td>';
-            echo '<td><a href="edit_produto.php?idFuncionario=' . $funcionario['id_funcionario'] . '">Editar</a></td>';
-            echo '<td><a href="delete_produto.php?idProduto=' . $funcionario['id_funcionario'] . '">Deletar</a></td>';
+            echo '<td><a onclick="return alertarEdit();" href="atualizar_funcionarios.php?id_funcionario=' . $funcionario['id_funcionario'] . '">Editar</a></td>';
+            echo '<td><a onclick="return alertarDelet();" href="delete_funcionarios.php?id_funcionario=' . $funcionario['id_funcionario'] . '">Deletar</a></td>';
             echo '</tr>';
           }
           ?>
@@ -119,6 +119,32 @@ $obras = $query2->fetchAll();
 
   </div>
 
+  <script>
+    function alertarDelet() {
+      var resposta = confirm("Deseja deletar essa funcionário?");
+      if (resposta) {
+        // O usuário clicou em "OK"
+        header('Location: delete_funcionarios.php');
+      } else {
+        // O usuário clicou em "Cancelar"
+      }
+      return false; // Isso impede que o navegador siga o link
+    }
+  </script>
+
+  <script>
+    function alertarEdit() {
+      var resposta = confirm("Deseja editar esse funcionáro?");
+      if (resposta) {
+        // O usuário clicou em "OK"
+        header('Location: atualizar_funcionarios.php');
+      } else {
+        // O usuário clicou em "Cancelar"
+       
+      }
+      return false; // Isso impede que o navegador siga o link
+    }
+  </script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>

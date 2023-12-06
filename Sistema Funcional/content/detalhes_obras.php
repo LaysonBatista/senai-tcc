@@ -131,7 +131,7 @@ $obras = $query->fetchAll();
             var resposta = confirm("Você realmente deseja editar essa obra?");
             if (resposta) {
                 // O usuário clicou em "OK"
-                header('Location: atualizar).php');
+                header('Location: atualizar_detalhes.php');
             } else {
                 // O usuário clicou em "Cancelar"
                 alert("Você não editou essa obra!");
