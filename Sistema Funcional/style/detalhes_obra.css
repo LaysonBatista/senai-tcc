@@ -204,3 +204,12 @@ img[src="../image/icon-deletar-obra.png"]:hover {
   filter: brightness(2000%);
   transition: filter 0.5s ease;
 }
+
+#menu_detalhes{
+  background-color: var(--textUnderlinedLineColor, currentColor);
+
+}
+
+#menu_detalhes:focus{
+  text-decoration: none;
+}

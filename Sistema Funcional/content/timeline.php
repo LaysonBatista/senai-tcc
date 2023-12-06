@@ -35,15 +35,45 @@ $obras = $query2->fetchAll();
       <nav class="page__menu menu">
         <ul class="menu__list r-list">
           <li class="menu__logo"><img src="../image/obra360.png" alt="logo_obra_360"></li>
-          <li class="menu__group"> <?php
-                                    foreach ($obras as $obra) {
-                                      echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '"class="menu__link r-link text-underlined">Detalhes</a></li>';
-                                    }
-                                    ?>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Andamento</a></li>
-          <li class="menu__group"><a href="funcionarios.php" class="menu__link r-link text-underlined">Funcionários</a></li>
-          <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Mensagens</a></li>
-          <li id="logout" class="menu__group menu__logout"><a href="tela_principal_construtora.php" class="menu__link r-link text-underlined">Sair</a></li>
+          <li class="menu__group">
+            <?php
+            foreach ($obras as $obra) {
+              echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Detalhes</a>';
+            }
+            ?>
+          </li>
+
+          <li class="menu__group">
+            <?php
+            foreach ($obras as $obra) {
+              echo '<a href="timeline.php?idObra=' . $obra['id_obra'] . '" id="menu_detalhes" class="menu__link r-link text-underlined">Andamento</a>';
+            }
+            ?>
+          </li>
+
+          <li class="menu__group">
+            <?php
+            foreach ($obras as $obra) {
+              echo '<a href="funcionarios.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Funcionários</a>';
+            }
+            ?>
+          </li>
+
+          <li class="menu__group">
+            <?php
+            foreach ($obras as $obra) {
+              echo '<a href="tela_mensagem.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Menssagens</a>';
+            }
+            ?>
+          </li>
+
+          <li id="logout" class="menu__group menu__logout">
+            <?php
+            foreach ($obras as $obra) {
+              echo '<a href="tela_principal_construtora.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Sair</a>';
+            }
+            ?>
+          </li>
         </ul>
       </nav>
       <script>
