@@ -97,6 +97,8 @@ body{
 
 .descricao-texto{
   margin-left: 5%;
+  
+  
 }
 
 
@@ -213,3 +215,5 @@ img[src="../image/icon-deletar-obra.png"]:hover {
 #menu_detalhes:focus{
   text-decoration: none;
 }
+
+

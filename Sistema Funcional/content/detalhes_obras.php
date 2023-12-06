@@ -21,6 +21,7 @@ $obras = $query->fetchAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes da obra</title>
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/detalhes_obra.css">
     <link rel="stylesheet" href="../style/menu_obra.css">
 </head>
@@ -46,13 +47,13 @@ $obras = $query->fetchAll();
 
                     <li class="menu__group">
                         <?php
-                            foreach ($obras as $obra) { echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Detalhes</a>'; }
+                            foreach ($obras as $obra) { echo '<a href="funcionarios.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Funcionários</a>'; }
                         ?>
                     </li>
 
                     <li class="menu__group">
                         <?php
-                            foreach ($obras as $obra) { echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Detalhes</a>'; }
+                            foreach ($obras as $obra) { echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Menssagem</a>'; }
                         ?>
                     </li>
 
@@ -92,7 +93,7 @@ $obras = $query->fetchAll();
         echo '</div>';
 
         echo '<div class="descricao-texto">';
-        echo '<p class="branco">' . $obra['descricao_obra'] . '</p>';
+        echo '<p class="branco">' .  nl2br($obra['descricao_obra']) . '</p>';
         echo '</div>';
 
         echo '<div class="div-icone-local-obra">';

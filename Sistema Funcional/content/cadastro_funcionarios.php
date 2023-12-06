@@ -22,7 +22,7 @@
 
           <div class="form-group">
             <label for="mensagem">Cargo</label>
-            <input  type="text" id="mensagem" name="cargo_funcionario" rows="4" required></textarea>
+            <textarea  type="text" id="mensagem" name="cargo_funcionario" rows="4" required></textarea>
           </div>
 
           <div class="form-group">

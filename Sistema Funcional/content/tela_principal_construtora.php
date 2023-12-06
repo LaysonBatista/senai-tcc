@@ -68,6 +68,8 @@ $totalObras = $query2->fetchAll();
                 return confirm("Você realmente deseja sair?");
             }
         </script>
+
+        
     </header>
 
     <!----- Barra de pesquisa ------->
@@ -78,12 +80,11 @@ $totalObras = $query2->fetchAll();
         </form>
     </div>-->
 
+    
     <div class="btns">
         <div class="div-add-obra">
             <a href="cadastro_detalhes.php"><img class="add-obra suaClasse" src="../image/add-branco.png" alt="adicionar"></a>
         </div>
-
-
     </div>
 
 

@@ -222,6 +222,64 @@ form.example::after {
   box-shadow: rgba(255, 255, 255, 0.342) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.div-obra4 {
+  width: 20%;
+  height: 25%;
+  background-color: #0f2f4b;
+  border-radius: 10px;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: background-color 0.5s ease;
+}
+
+.div-obra4:hover {
+  background-color: #b24b38;
+  transition: background-color 0.5s ease;
+  box-shadow: rgba(255, 255, 255, 0.342) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.div-obra5 {
+  width: 20%;
+  height: 25%;
+  background-color: #0f2f4b;
+  border-radius: 10px;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: background-color 0.5s ease;
+}
+
+.div-obra5:hover {
+  background-color: #b24b38;
+  transition: background-color 0.5s ease;
+  box-shadow: rgba(255, 255, 255, 0.342) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.div-obra6 {
+  width: 20%;
+  height: 25%;
+  background-color: #0f2f4b;
+  border-radius: 10px;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: background-color 0.5s ease;
+}
+
+.div-obra6:hover {
+  background-color: #b24b38;
+  transition: background-color 0.5s ease;
+  box-shadow: rgba(255, 255, 255, 0.342) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 .conteudo-div-obra{
   margin-top: 2%;
   display: flex;
