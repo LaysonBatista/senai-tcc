@@ -12,7 +12,7 @@
 
 <body>
   <div class="form-container">
-    <h2>Cadastro de cliente</h2>
+    <h2 class="azul suaClasse">Cadastro de cliente</h2>
 
     <form action="insert_clientes.php" method="post">
       <div class="form-group">
