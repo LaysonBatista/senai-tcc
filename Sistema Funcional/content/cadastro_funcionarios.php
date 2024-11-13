@@ -14,7 +14,7 @@
 
   <div class="container">
     <div class="form-container">
-      <h2 class="azul suaClasse">Cadastro de Funcionário</h2>
+      <h2 class="laranja suaClasse">Cadastro de Funcionário</h2>
 
       <form action="insert_funcionarios.php" method="post">
         <div class="form-group">
@@ -45,10 +45,10 @@
 
   <script>
     function alertar() {
-      alert('Funcionário cadastrado!');
-      
+      alert('Funcionário Cadastrado!');
     }
   </script>
+
 
 </body>
 

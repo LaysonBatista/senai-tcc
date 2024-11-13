@@ -70,7 +70,7 @@ $obras = $query2->fetchAll();
           <li id="logout" class="menu__group menu__logout">
             <?php
             foreach ($obras as $obra) {
-              echo '<a href="tela_principal_construtora.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Sair</a>';
+              echo '<a href="tela_principal_cliente.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Sair</a>';
             }
             ?>
           </li>
@@ -98,7 +98,7 @@ $obras = $query2->fetchAll();
         echo '<div>';
         echo '<time>' . $etapa['nome_etapa'] . '</time>' . $etapa['descricao_etapa'];
         echo '<br>';
-        echo '<button type="submit">Detalhes</button>';
+        echo '<button><a href="detalhes_da_etapa.php">Detalhes</a></button>';
         echo '</div>';
         echo '</li>';
       }

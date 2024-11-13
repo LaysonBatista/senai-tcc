@@ -66,7 +66,7 @@ $obras = $query2->fetchAll();
             <li class="menu__group">
               <?php
               foreach ($obras as $obra) {
-                echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Menssagens</a>';
+                echo '<a href="tela_mensagem.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Menssagens</a>';
               }
               ?>
             </li>
@@ -85,7 +85,7 @@ $obras = $query2->fetchAll();
           }
         </script>
 
-        <h2>Lista de Funcionários</h2>
+        <h2 class="laranja suaClasse">Lista de Funcionários</h2>
 
       </div>
     </header>
@@ -102,7 +102,7 @@ $obras = $query2->fetchAll();
           </tr>
         </thead>
         <tbody>
-          <?php
+        <?php
           foreach ($funcionarios as $funcionario) {
             echo '<tr>';
             echo '<td>' . $funcionario['id_funcionario'] . '</td>';
@@ -145,6 +145,7 @@ $obras = $query2->fetchAll();
       return false; // Isso impede que o navegador siga o link
     }
   </script>
+
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>

@@ -4,7 +4,20 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: sans-serif;
+  background-image:linear-gradient(#09f,#0f2f4b);
+  animation: gradient 0s forwards;
 }
+
+@keyframes gradient {
+  0% {
+    background: linear-gradient(#09f, #0f2f4b);
+  }
+
+  100% {
+    background: linear-gradient(#ff44006e, #0f2f4b);
+  }
+}
+
 
 .bg-color-lg{
     background-color: white;
@@ -31,10 +44,28 @@ html, body {
 }
   
 .op-logins{
+  position: absolute;
+  right: 0;
   width: 60%;
   height: 50%;
   margin-top: 2%;
+  animation-name: move-right;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
+
+@keyframes move-right {
+  from {
+    
+  }
+  to {
+     right: 1%; 
+  }
+}
+  
+
+
 .btns-login{
   margin-right: 25%;
 }  
@@ -86,7 +117,21 @@ html, body {
   background-color: #b24b38;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  animation-name: move-left;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
+
+@keyframes move-left {
+  from {
+    
+  }
+  to {
+     left: 31%; 
+  }
+}
+  
   
 
 .login{

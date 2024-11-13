@@ -53,7 +53,7 @@ $obras = $query->fetchAll();
 
                     <li class="menu__group">
                         <?php
-                            foreach ($obras as $obra) { echo '<a href="detalhes_obras.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Menssagem</a>'; }
+                            foreach ($obras as $obra) { echo '<a href="tela_mensagem.php?idObra=' . $obra['id_obra'] . '" class="menu__link r-link text-underlined">Menssagem</a>'; }
                         ?>
                     </li>
 
@@ -93,7 +93,7 @@ $obras = $query->fetchAll();
         echo '</div>';
 
         echo '<div class="descricao-texto">';
-        echo '<p class="branco">' .  nl2br($obra['descricao_obra']) . '</p>';
+        echo '<p class="azul2">' .  nl2br($obra['descricao_obra']) . '</p>';
         echo '</div>';
 
         echo '<div class="div-icone-local-obra">';
@@ -120,7 +120,7 @@ $obras = $query->fetchAll();
                 header('Location: tela_principal_construtora.php');
             } else {
                 // O usuário clicou em "Cancelar"
-                alert("Você não excluiu essa obra!");
+                
             }
             return false; // Isso impede que o navegador siga o link
         }
@@ -131,7 +131,7 @@ $obras = $query->fetchAll();
             var resposta = confirm("Você realmente deseja editar essa obra?");
             if (resposta) {
                 // O usuário clicou em "OK"
-                header('Location: atualizar_detalhes.php');
+                header('Location: atualizar).php');
             } else {
                 // O usuário clicou em "Cancelar"
                 alert("Você não editou essa obra!");

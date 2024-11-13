@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: sans-serif;
+  background-image:linear-gradient(#09f,#0f2f4b);
 }
 
 .bg-color-lg{
@@ -87,6 +88,19 @@ html, body {
   background-color: #0f2f4b;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  animation-name: move-left;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-left {
+  from  {
+    left: 31%;
+  }
+  to {
+     left: 61%; 
+  }
 }
   
 
@@ -347,6 +361,8 @@ img[src="../image/obra360.png"]:hover {
     }
   }
   
+/* Ilustração de construções */
+
 
 
 

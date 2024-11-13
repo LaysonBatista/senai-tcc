@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login funcionario</title>
+    <title>Login Cliente</title>
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/tela_login_cliente.css">
@@ -17,7 +17,7 @@
                     <a href="tela_inicial.php"><img class="logo-tela-log" src="../image/obra360.png" alt="Logo do Obra360" width="100" height="100"></a>
                     
                     <h2 class="branco">SEJA BEM-VINDO(A)!</h2>
-                    <p class="branco">Escolha uma das opcções para login.</p>
+                    <p class="branco">Escolha uma das opções para login.</p>
 
                     <div class="btns-login">
                         <a class="btn btn-secondary btn-funcionario azul" href="tela_login_construtora.php">CONSTRUTORA</a>
